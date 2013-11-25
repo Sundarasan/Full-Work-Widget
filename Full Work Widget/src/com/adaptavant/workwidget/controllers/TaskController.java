@@ -35,6 +35,13 @@ public class TaskController {
 		
 	}
 	
+	@RequestMapping(value="task", method = RequestMethod.DELETE)
+	public @ResponseBody Task deleteTask( @RequestBody String requestBody, @RequestParam("apiKey") String apiKey, @RequestParam("userId") String userId ) {
+		
+		return TaskService.deleteTask( apiKey, userId, requestBody);
+		
+	}
+	
 	@RequestMapping(value="getTasksByAssigneeId", method = RequestMethod.GET)
 	public @ResponseBody ArrayList<Task> readTasks( @RequestParam("apiKey") String apiKey, @RequestParam("userId") String userId) {
 		

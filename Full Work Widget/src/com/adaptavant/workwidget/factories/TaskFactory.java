@@ -209,5 +209,45 @@ private static Logger logger = Logger.getLogger( ContactFactory.class.getPackage
 		return returnHashMap;
 		
 	}
+	
+	public static HashMap<String, Object> deleteTask( String apiKey, String userId, Task taskToDelete ) {
+		
+		boolean isSuccess = false;
+		HashMap<String, Object> returnHashMap = new HashMap<String, Object>();
+		
+		try {
+			
+			TaskTemp taskTempToDelete = TaskTempAndTaskConverter.taskToTaskTemp( taskToDelete );
+			
+			JSONObject taskTempToCreateJson = new JSONObject( taskTempToDelete );
+			
+			String responseString = UrlFetchUtil.httpRequest( Urls.getDeleteTaskUrl( apiKey, userId ), String.valueOf( taskTempToCreateJson ), "POST",  "application/json", null, 2);
+			
+			JSONObject responseJson = new JSONObject( responseString );
+			
+			if( responseJson.has("status") && (boolean) responseJson.get("status") ) {
+				
+				TaskTemp deletedTaskTemp = FinalVariables.getObjectMapper().readValue( String.valueOf( responseJson.get("task") ), new TypeReference<TaskTemp>() {});
+				
+				Task deletedTask = TaskTempAndTaskConverter.taskTempToTask( deletedTaskTemp );
+				
+				returnHashMap.put("task", deletedTask);
+				
+				isSuccess = true;
+				
+			}
+			
+		} catch (Exception e) {
+			
+			logger.log(Level.SEVERE, "Error Path : " + TaskFactory.class.getPackage().getName() + "; Method : createTask(); Detail : Error while creating a task.");
+			logger.log(Level.SEVERE, e.getMessage(), e);
+			
+		} finally {
+			returnHashMap.put("success", isSuccess);
+		}
+		
+		return returnHashMap;
+		
+	}
 
 }

@@ -16,6 +16,7 @@ public class Urls {
 	private static final String cmsApiSyntax = "apikey=";
 	private static final String cmsApiKey = "SEN42";
 	private static final String createTaskUrl = "/createTask";
+	private static final String deleteTaskUrl = "/deleteATask";
 	private static final String userIdSyntax = "userid=";
 	private static final String ownerIdSyntax = "ownerid=";
 	private static final String readTaskByAssigneeIdUrl = "/readTask";
@@ -58,6 +59,10 @@ public class Urls {
 
 	public static String getCreateTaskUrl( String accountId, String userId ) {
 		return cmsStagingUrl + createTaskUrl + "?" + cmsApiSyntax + accountId + "&" + userIdSyntax + userId ;
+	}
+	
+	public static String getDeleteTaskUrl( String accountId, String userId ) {
+		return cmsStagingUrl + deleteTaskUrl + "?" + cmsApiSyntax + accountId + "&" + userIdSyntax + userId;
 	}
 	
 	public static String getUserIdSyntax() {

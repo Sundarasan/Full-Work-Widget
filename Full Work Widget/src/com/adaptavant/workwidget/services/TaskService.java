@@ -115,5 +115,43 @@ public class TaskService {
 		return returnHashMap;
 		
 	}
+	
+	public static Task deleteTask( String apiKey, String userId, String taskRequestBody ) {
+		
+		boolean isSuccess = false;
+		//HashMap<String, Object> returnHashMap = new HashMap<String, Object>();
+		Task returnTask = null;
+
+		try {
+					
+			JSONObject requestBodyJson = new JSONObject( taskRequestBody );
+				
+			TaskTemp taskTemp_ToDelete = FinalVariables.getObjectMapper().readValue(  String.valueOf(requestBodyJson), new TypeReference<TaskTemp>() {} );
+					
+			Task task_ToDelete = TaskTempAndTaskConverter.taskTempToTask( taskTemp_ToDelete );
+
+			HashMap<String, Object> responseFromFactory = TaskFactory.deleteTask( apiKey, userId, task_ToDelete);
+				
+			if( responseFromFactory.containsKey("success") && (boolean) responseFromFactory.get("success") ) {
+					
+				Task task = (Task) responseFromFactory.get("task");
+				returnTask = task;
+				//returnHashMap.put("task", task);
+				isSuccess = true;
+					
+			}
+				
+		} catch(Exception e) {
+			
+			System.out.println("Exception");
+			e.printStackTrace();
+			
+		} finally {
+			//returnHashMap.put("success", isSuccess);
+		}
+			
+		return returnTask;
+		
+	}
 
 }
