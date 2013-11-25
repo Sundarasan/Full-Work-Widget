@@ -1,0 +1,85 @@
+{namespace adaptavant.activity}
+
+/**
+ * Activity --> Activity Pane
+ */
+ 
+{template .activty_pane}
+
+  <div class="container padding-top-10">
+		  <div class="jumbotron" style="padding: 0px 0px 0px 0px;">
+
+        <div class="header">
+
+          <nav class="navbar navbar-default" role="navigation" style="padding: 5px 5px 5px 5px; margin-bottom: 0px; height: 40px;">
+            <ul class="nav navbar-nav pull-right" id="nav-bar">
+
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <img class="img-medium" src="" /><b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+        
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <img class="img-medium" src="img/default_prof_pic.png" /><b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Log out</a></li>
+              </ul>
+            </li>
+
+          </ul>
+        </nav>
+      </div>
+
+      <div class="container" id="main-container">
+
+        <div class="row" id="text-area-expand">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero">
+
+                <div class="row" style="line-height: 25px;">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero">
+                    <textarea rows="1" cols="50" placeholder="Describe your activity..." id="activity-text-area"></textarea>
+                  </div>
+                </div>
+
+                <div class="row" id="icons-div">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-zero">
+
+                    <ul class="nav nav-pills pull-left" id="icons-group">
+                    <li class="vertical-divider-right"><a href="#"><img class="img-small" src="img/TagFliped.png"/></a></li>
+                </ul>
+
+                    <ul class="nav nav-pills pull-right" id="icons-group">
+                    <li class="vertical-divider-left"><a href="#"><img class="img-small" src="img/datepicker_calendar_icon.gif"/></a></li>
+                    <li class="vertical-divider-left"><a href="#"><img class="img-small" src="img/Play1.png"/></a></li>
+                </ul>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+        <div class="row" style="margin: 30px 0px 60px 0px;">
+            <img class="profile-pic-nav" src="img/clock.png"/>
+            <p class="color-grey" style="font-size:18px;">Start Creating your activity ....</p>
+            <p class="text-size-very-small color-grey">.... and track your activity log will appear here</p>      
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+{/template}

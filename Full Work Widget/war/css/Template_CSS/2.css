@@ -1,0 +1,84 @@
+#activity-jumbotron {
+	padding: 0px 0px 0px 0px;
+}
+
+.profile-pic-nav {
+	height: 30px;
+	width: 28px;
+}
+
+.navbar {
+	min-height: 20px;
+}
+
+.dropdown {
+	padding-right: 5px;
+}
+
+.activity-pane-template {
+	
+}
+
+.add-activity-div {
+	background-color: #000000;
+	border-radius: 10px;
+}
+
+.main-container {
+	padding: 20px 20px 20px 20px;
+	background-color: #ECECEC;
+}
+
+.icons-group > li > a {
+	padding: 2px 2px 2px 2px;
+	height: 25px;
+	margin: 0px 3px 0px 3px;
+	/*height: 30px;*/
+}
+
+.icons-group > li > a:hover {
+	background-color: transparent;
+}
+
+.nav-bar > li > a {
+	padding:0px 0px 0px 0px;
+}
+
+.nav-bar > li {
+	padding-right: 8px;
+}
+
+.icons-div {
+	padding: 2px 0px 2px 0px;
+	background-color: #E9E9E9;
+	display:none;
+	border-bottom: 1px solid #C4C4C4;
+	border-right: 1px solid #C4C4C;
+	line-height: 25px;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+.activity-text-area {
+	color: #AAAAAA;
+	padding: 4px 5px 0px 5px;
+	width: 100%;
+	height: 28px;
+	margin: 0px 0px 0px 0px;
+	border: 1px solid #5E91FF;
+	border: 1px solid #CFDDFC;
+	font-size: 15px;
+	line-height: 20px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	overflow: hidden;
+	resize:none;
+}
+
+.activity-text-area:focus {
+	outline-color: #ffffff;
+}
+
+.text-area-expand {
+	box-shadow: 3px 3px 7px #888888;
+}

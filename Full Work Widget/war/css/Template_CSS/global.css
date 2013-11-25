@@ -1,0 +1,93 @@
+.container {
+	max-width: 400px;
+}
+
+.jumbotron {
+  background-color: #ECECEC;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.text-size-small {
+  font-size:15px;
+}
+
+.text-size-very-small {
+  font-size:10px;
+}
+
+.color-grey {
+  color: #B1B1B1;
+}
+
+.padding-top-10 {
+  padding-top: 10px;
+}
+
+.icons {
+	padding:2px 2px 2px 2px;
+}
+
+.transparent-background {
+	background: none;
+	background-color: transparent;
+	background-image: none;
+}
+
+.row {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.padding-zero {
+	padding: 0px 0px 0px 0px;
+}
+
+.border-radius-5px {
+	border-radius: 5px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.shadow {
+	box-shadow: 0px 5px 10px #413D3D;
+}
+
+.img-small {
+	height: 15px;
+	width: 15px;
+	margin-top: 4px;
+}
+
+.img-medium {
+	height: 25px;
+	width: 21px;
+}
+
+.align-middle {
+	vertical-align: middle;
+}
+
+.absolute-center {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.vertical-middle {
+	vertical-align:middle;
+}
+
+.vertical-divider-left {
+	 height: 100%;
+	 border-left: 1px solid #D1D1D1;
+}
+
+.vertical-divider-right {
+	height: 100%;
+	border-right: 1px solid #D1D1D1;
+}

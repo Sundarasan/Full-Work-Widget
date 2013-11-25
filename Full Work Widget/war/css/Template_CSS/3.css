@@ -1,0 +1,371 @@
+.jumbotron {
+	padding: 0px 0px 0px 0px;
+}
+
+.profile-pic-nav {
+	height: 30px;
+	width: 28px;
+}
+
+.navbar {
+	min-height: 20px;
+}
+
+.dropdown {
+	padding-right: 5px;
+}
+
+.add-activity-div {
+	background-color: #000000;
+	border-radius: 10px;
+}
+
+.main-container {
+	padding: 20px 20px 20px 20px;
+}
+
+.icons-group > li > a {		/*	*/
+	padding: 2px 2px 2px 2px;
+	height: 25px;
+	margin: 0px 3px 0px 3px;
+	/*height: 30px;*/
+}
+
+.icons-group > li > a:hover {		/*	*/
+	background-color: transparent;
+}
+
+.nav-bar > li > a {		/*	*/
+	padding:0px 0px 0px 0px;
+}
+
+.nav-bar > li {			/*	*/
+	padding-right: 8px;
+}
+
+.icons-div {		/*	*/
+	padding: 0px 0px 0px 0px;
+	background-color: #E9E9E9;
+	/*display:none;*/
+	border-bottom: 1px solid #C4C4C4;
+	border-top: 1px solid #C4C4C4;
+	border-right: 1px solid #C4C4C;
+	line-height: 19px;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	height: 28px;
+}
+
+.activity-text-area {		/*	*/
+	color: #8A8A8A;
+	padding: 4px 5px 0px 5px;
+	width: 100%;
+	height: 28px;
+	margin: 0px 0px 0px 0px;
+	border: none;
+	font-size: 15px;
+	line-height: 20px;
+	overflow: hidden;
+	resize:none;
+}
+
+.activity-text-area:focus {		/*	*/
+	outline-color: #ffffff;
+}
+
+.text-area-expand {	/* */
+	
+}
+
+.activity-tile {
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	box-shadow: 3px 3px 7px #888888;
+}
+
+#activity-accordion-group .activity-accordian-panel .panel-heading .accordion-toggle .activity-text-area {
+	cursor: pointer;
+	cursor: hand;
+	background-image: linear-gradient(to bottom, #F3F2F2, #CECECE);
+}
+
+#activity-accordion-group .activity-accordian-panel .panel-heading .accordion-toggle .activity-text-area:hover {
+	background-image:  linear-gradient(to bottom, #CECECE, #F3F2F2);
+}
+
+#activity-accordion-group .add-activity-accordian-panel .panel-heading .accordion-toggle .activity-text-area {
+	cursor: pointer;
+	cursor: hand;
+}
+
+#activity-accordion-group .activity-accordian-panel {
+	border: 1px solid #BBBBBB;
+	border-radius: 3px;
+	margin-top: 8px;
+}
+
+#activity-accordion-group .activity-accordian-collapse .activity-icons-div-date-icon {
+	/*display: none;*/
+}
+
+.activity-accordion-group .activity-accordian-collapse .activity-date-input {
+	font-size: 9px;
+	line-height: 15px;
+	background-color: #FFFFFF;
+	background-color: transparent;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	cursor: hand;
+	padding-left: 1px;
+	padding-right: 1px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.activity-accordion-group .activity-accordian-collapse .activity-date-input:hover {
+	background-image: linear-gradient(to bottom, #FFFFFF, #CECBCB);
+	box-shadow: 0px 0px 4px #888888;
+}
+
+body .ui-widget {
+	font-size:0.7em;
+}
+
+.activity-accordion-group .activity-ticking-clock {
+
+}
+
+#activity-accordion-group .panel .panel-heading .accordion-toggle .activity-text-area.old-activity-text-area {
+	width: 72%;
+}
+
+.activity-accordion-group .activity-ticking-clock .activity-ticking-clock-input {
+	width: 20%;
+	border: none;
+	background-image: linear-gradient(to bottom, #FFA8A8, #FF5656);
+	color: #FFFFFF;
+}
+
+
+#activity-accordion-group .activity-accordian-panel .panel-heading .accordion-toggle .activity-prof-pic-img {
+	width:8%;
+	height: 28px;
+	background-image: linear-gradient(to bottom, #F3F2F2 ,#CECECE);
+	border-right: 1px solid #BDBDBD;
+}
+
+#activity-accordion-group .activity-accordian-panel .panel-heading .accordion-toggle .activity-text-area.old-activity-text-area {
+	/*background: url(file:///D:/Development%20-%20Adaptavant/Tasks/Madhavan%20Sir/Full%20Auth/img/default_prof_pic_small.png);
+	background-size: 100% 100%;*/
+}
+
+#activity-accordion-group .activity-accordian-panel .icons-div .activity-ticking-clock {
+	height: 25px;
+	width: 62px;
+}
+
+#activity-accordion-group .activity-accordian-panel .icons-div .activity-ticking-clock input {
+	height: 26px;
+	width: 67px;
+	font-size: 10px;
+	text-align: center;
+}
+
+#activity-accordion-group .activity-accordian-panel .activity-accordion-heading .activity-ticking-clock input {
+	text-align: center;
+	font-size: 10px;
+}
+
+#activity-accordion-group .activity-accordian-panel .activity-accordion-heading .info-div {
+	display: none;
+	font-size: 10px;
+	font-weight: bold;
+	height: 15px;
+	line-height: 15PX;
+	color: #FFFFFF;
+	text-align: center;
+	background-color: #A8A6A6;
+	text-shadow: 0px 0px 5px #7E7E7E;
+	padding: 0px 3px 0px 3px;
+}
+
+#activity-accordion-group .activity-accordian-panel .activity-accordion-heading .info-div .activity-owner {
+	text-align: left;
+}
+
+#activity-accordion-group .activity-accordian-panel .activity-accordion-heading .info-div .activity-created-on {
+	padding-left: 2px;
+	padding-right: 1px;
+	text-align: right;
+}
+
+#activity-accordion-group .panel .activity-accordian-collapse .deadline-div {
+
+	height: 11px;
+	line-height: 10px;
+	background-color: transparent;
+
+	display: none;
+
+}
+
+#activity-accordion-group .panel .activity-accordian-collapse .deadline-div .deadline-input {
+
+	font-size: 9px;
+	line-height: 9px;
+	padding: 0px 2px 0px 5px;
+	font-weight: bold;
+	background-color: #A8A6A6;
+	text-shadow: 0px 0px 5px #7E7E7E;
+	color: #FFFFFF;
+	border-top-left-radius: 10px;
+	border: none;
+	text-align: center;
+	cursor: pointer;
+	cursor: hand;
+
+}
+
+#activity-accordion-group .panel .activity-accordian-collapse .deadline-div .deadline-input:focus {
+	outline-color: transparent;
+}
+
+#activity-accordion-group .panel .activity-accordian-collapse  .panel-body {
+
+	border: none;
+
+}
+
+#activity-accordion-group .panel .activity-accordian-collapse .tags-div {
+
+	height: 14px;
+	line-height: 3px;
+	background-color: #A8A6A6;
+	display: none;
+
+}
+
+#activity-accordion-group .panel .activity-accordian-collapse .tags-div .tags-col {
+	/*overflow-x: auto;*/
+	height: 14px;
+}
+
+#activity-accordion-group .panel .activity-accordian-collapse .tags-div .add-tag {
+
+	margin-top: 1px;
+	font-size: 9px;
+	margin-left: 2px;
+	padding: 1px 3px 1px 2px;
+	background-color: #D58800;
+	border: 1px solid #C2C2C2;
+}
+
+#activity-accordion-group .panel .activity-accordian-collapse .add-workers-div .add-tag:hover {
+	text-decoration: none;
+}
+
+#activity-accordion-group .panel .activity-accordian-collapse .tags-div .add-tag .tag-icon {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#activity-accordion-group .panel .activity-accordian-collapse .tags-div .activity-tag {
+	margin-top: 1px;
+	font-size: 9px;
+	margin-left: 2px;
+	padding: 1px 3px 1px 2px;
+	background-color: #696969;
+	border: 1px solid #C2C2C2;
+	color: #FFFFFF;
+}
+
+#activity-accordion-group .panel .activity-accordian-collapse .tags-div .activity-tag a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.dropdown-menu.tag-dropdown {
+	min-width: 50px;
+}
+
+.search-tag-textbox {
+	font-size:12px;
+	line-height:12px;
+	width: 100%;
+}
+
+.img-medium.add-person-img {
+	margin-top:2px;
+	height:21px;
+}
+
+#activity-accordion-group .panel .activity-accordian-collapse .workers-list-div {
+	height: 14px;
+	line-height: 3px;
+	background-color: #A8A6A6;
+	display: none;
+}
+
+#activity-accordion-group .panel .activity-accordian-collapse .workers-list-div .activity-worker {
+	margin-top: 1px;
+	font-size: 9px;
+	margin-left: 2px;
+	padding: 1px 3px 1px 2px;
+	background-color: #696969;
+	border: 1px solid #C2C2C2;	
+}
+
+#activity-accordion-group .panel .activity-accordian-collapse .workers-list-div .add-worker-plus {
+	margin-top: 1px;
+	font-size: 9px;
+	margin-left: 2px;
+	padding: 1px 3px 1px 2px;
+	background-color: #D58800;
+	border: 1px solid #C2C2C2;	
+}
+
+.search-worker-textbox {
+	font-size:12px;
+	line-height:12px;
+	width: 100%;
+}
+
+.dropdown-menu.add-workers-dropdown {
+	min-width: 50px;
+}
+
+.activity-widget .header .activity-nav {
+	background-color: #E7E4E4;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.activity-widget .header .activity-nav .activity-nav-inner {
+	line-height: 27px;
+}
+
+.activity-widget .header .activity-nav .activity-nav-inner .dropdown {
+	margin-right: 10px;
+	padding-right: 0px;
+}
+
+.activity-widget .header .activity-nav .activity-nav-inner .dropdown a {
+	
+}
+
+.activity-widget .header .activity-nav .activity-nav-inner .dropdown a:hover {
+	text-decoration: none;
+}
+
+.activity-widget .header .activity-nav .activity-nav-inner .dropdown a:focus {
+	text-decoration: none;
+	background-color: #CECBCB;
+}
+
+.activity-widget .new-task-notification {
+	cursor: pointer;
+	cursor: hand;
+	margin-right: 5px;
+	display: none;
+}
